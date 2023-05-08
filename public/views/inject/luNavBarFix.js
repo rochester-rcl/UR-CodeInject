@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     newNav.classList.add('row');
     newNav.innerHTML = ` 
       <div class="col-sm-12">
-        <div id="secondNav">
+        <div id="secondNavLu">
         <div class="container">
             <a href="https://www.library.rochester.edu/rbscp/collections">Rare Books and Special Collections</a>
             <a href="https://www.esm.rochester.edu/sibley/">Sibley Music Library</a>
