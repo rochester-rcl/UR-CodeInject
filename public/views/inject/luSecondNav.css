@@ -43,7 +43,7 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     .aboutArchive .accessSection {
     width: 100%!important;
     }
-    #secondNav .container {
+    #secondNavLu .container {
         flex-direction: column;
         gap:1em;
     }
@@ -96,13 +96,13 @@ font-size: 1.5rem;
     border: none!important;
 }
 
-#secondNav {
+#secondNavLu {
     background-color: #FFC70A;
     padding: 10px 0; 
     margin-bottom: 10px;
   }
   
-  #secondNav .container {
+  #secondNavLu .container {
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -112,7 +112,7 @@ font-size: 1.5rem;
     gap: 1em;
   }
   
-  #secondNav .container a {
+  #secondNavLu .container a {
       font-weight: 700!important;
       font-size: 15px !important;
       color: #0a0a0a;
@@ -123,7 +123,7 @@ font-size: 1.5rem;
   
 
 
-  #secondNav .container a:hover {
+  #secondNavLu .container a:hover {
     text-decoration: none;
   }
 
