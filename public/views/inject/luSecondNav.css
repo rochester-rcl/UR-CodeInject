@@ -43,7 +43,7 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     .aboutArchive .accessSection {
     width: 100%!important;
     }
-    #secondNav .container {
+    #secondNavLu .container {
         flex-direction: column;
         gap:1em;
     }
