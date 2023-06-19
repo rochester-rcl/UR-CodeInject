@@ -31,16 +31,16 @@
         end
         unless inject
           break
-
-  %><%=  raw line  %>
-      <%
-
         end
-        end
-        if filetype == "css" %></style>
-    <% end
-       if filetype == "js" %></script>
+  %><%= raw line %>
     <%
+
       end
       end
-    %>
+      if filetype == "css" %></style>
+  <% end
+     if filetype == "js" %></script>
+  <%
+    end
+    end
+  %>
