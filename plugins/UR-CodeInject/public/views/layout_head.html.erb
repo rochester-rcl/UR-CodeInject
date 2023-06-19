@@ -3,29 +3,44 @@
   Dir.foreach(context + "/inject") do |file|
     filetype = nil
     next if file == '.' or file == '..'
-    if File.extname(file)==".css"
+    if File.extname(file) == ".css"
       filetype = "css"
     end
-    if File.extname(file)==".html"
+    if File.extname(file) == ".html"
       filetype = "html"
     end
-    if File.extname(file)==".js"
+    if File.extname(file) == ".js"
       filetype = "js"
     end
 
     if filetype == "css"
-%><style><% end
-   if filetype == "js"
-     %><script><%
-   end
-     File.open(context + "/inject/" + file, "r") do |f|
-       f.each_line do |line|
-          %><%=raw line %><%
-
-      end
-      end
-      if filetype == "css" %></style><% end
-    if filetype == "js" %></script><%
+%>
+    <style>
+  <% end
+     if filetype == "js"
+  %><script>
+  <%
     end
-  end
-  %>
+    i = 0
+    inject = false
+    File.open(context + "/inject/" + file, "r") do |f|
+      f.each_line do |line|
+        i += 1
+        if i == 1 and (line == "/* Inject Location: head */" or line == "<!-- Inject Location: head -->")
+          inject = true
+        end
+        unless inject
+          break
+
+  %><%=  raw line  %>
+      <%
+
+        end
+        end
+        if filetype == "css" %></style>
+    <% end
+       if filetype == "js" %></script>
+    <%
+      end
+      end
+    %>
