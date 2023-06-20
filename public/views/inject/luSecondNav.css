@@ -1,0 +1,215 @@
+/* Inject Location: body_top */
+
+
+#navigation .top-bar {
+    background-color: #00205B!important;
+    border-bottom: none!important;
+}
+
+#navigation .top-bar a {
+    color: white!important;
+    font-weight: bold;
+    font-size: 14px !important;
+}
+
+
+.navbar-default .navbar-toggle {
+    background-color: white;
+}
+
+
+#header > .row {
+    border-bottom: none!important;
+}
+
+
+h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
+    color: #00205B;
+}
+
+.btn-primary {
+    background-color: #00205B;
+    border-color: #00205B;
+}
+
+.secondNavLogo {
+    display:flex;
+    position: absolute;
+    left:2%;
+    top:10%;
+}
+
+
+.secondNavLogo h3 {
+    color: #395792;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+
+/* changing order of the content after expand all/collapse all btn */
+#res_accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+#res_accordion > .panel.panel-default {
+    order: 2;
+}
+.infinite-record-scrollbar {
+	display: none;
+}
+
+
+.col-sm-9 {
+	display: flex;
+    flex-direction: column-reverse;
+}
+
+.upper-record-details {
+	display: table;
+}
+.bioghist.single_note{
+    display: table-header-group;
+}
+/* changing order of the content after expand all/collapse all btn */
+.row.has-resizable-content, #notes_row {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+@media (max-width: 992px) {
+.row.has-resizable-content, #notes_row {
+    flex-direction: column;
+}
+
+}
+@media (min-width: 992px) {
+     #sidebar.resizable-sidebar .resizable-sidebar-handle{
+        right: 0; 
+        left: auto;
+        background-color: #d1e1ff;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .row {
+        margin-top: 15px;
+    }
+
+    .aboutArchive {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .aboutArchive .aboutSection,
+    .aboutArchive .accessSection {
+    width: 100%!important;
+    }
+    #secondNavLu .container {
+        flex-direction: column;
+        gap:1em;
+    }
+    .secondNavLogo {
+	position: static;
+    }
+    #secondNavLu {
+	padding: 2.5em 0; 
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    }
+}
+
+
+
+.aboutArchive {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.aboutArchive .aboutSection,
+.aboutArchive .accessSection {
+    width: 50%;
+}
+
+.aboutArchive .aboutSection h3,
+.aboutArchive .accessSection h3 {
+font-size: 1.5rem;
+}
+
+.search {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.col-sm-3.form-group.form-inline.norepeat, 
+.col-sm-2.form-group,
+.col-sm-1.form-group,
+.col-sm-1
+ {
+    margin: 1.95rem 0;
+}
+
+.form-group.form-inline.col-sm-4 > label{
+    font-size: 1.15rem;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+}
+
+
+.navbar {
+    margin-bottom: 0!important;
+    border: none!important;
+}
+
+#secondNavLu {
+    position: relative;	
+    background-color: #FFC70A;
+    padding: 3em 0; 
+    margin-bottom: 0;
+  }
+  
+  #secondNavLu .container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 1em;
+  }
+  
+  #secondNavLu .container a {
+      font-weight: 700!important;
+      font-size: 15px !important;
+      color: #0a0a0a;
+      margin: 0 1em;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+  }
+  
+
+
+  #secondNavLu .container a:hover {
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+ 
