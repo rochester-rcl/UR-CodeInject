@@ -1,7 +1,8 @@
 /* Inject Location: body_top */
+
+
 #navigation .top-bar {
     background-color: #00205B!important;
-    /* border-bottom: 0.25rem solid #FFC70A; */
     border-bottom: none!important;
 }
 
@@ -21,6 +22,31 @@
     border-bottom: none!important;
 }
 
+
+h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
+    color: #00205B;
+}
+
+.btn-primary {
+    background-color: #00205B;
+    border-color: #00205B;
+}
+
+.secondNavLogo {
+    display:flex;
+    position: absolute;
+    left:2%;
+    top:10%;
+}
+
+
+.secondNavLogo h3 {
+    color: #395792;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+
 /* changing order of the content after expand all/collapse all btn */
 #res_accordion {
     display: flex;
@@ -30,17 +56,42 @@
 #res_accordion > .panel.panel-default {
     order: 2;
 }
-.upper-record-details {
-}
-/* changing order of the content after expand all/collapse all btn */
-h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
-    color: #00205B;
+.infinite-record-scrollbar {
+	display: none;
 }
 
-.btn-primary {
-    background-color: #00205B;
-    border-color: #00205B;
+
+.col-sm-9 {
+	display: flex;
+    flex-direction: column-reverse;
 }
+
+.upper-record-details {
+	display: table;
+}
+.bioghist.single_note{
+    display: table-header-group;
+}
+/* changing order of the content after expand all/collapse all btn */
+.row.has-resizable-content, #notes_row {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+@media (max-width: 992px) {
+.row.has-resizable-content, #notes_row {
+    flex-direction: column;
+}
+
+}
+@media (min-width: 992px) {
+     #sidebar.resizable-sidebar .resizable-sidebar-handle{
+        right: 0; 
+        left: auto;
+        background-color: #d1e1ff;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .row {
@@ -59,7 +110,19 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
         flex-direction: column;
         gap:1em;
     }
+    .secondNavLogo {
+	position: static;
+    }
+    #secondNavLu {
+	padding: 2.5em 0; 
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    }
 }
+
+
 
 .aboutArchive {
     display: flex;
@@ -109,9 +172,10 @@ font-size: 1.5rem;
 }
 
 #secondNavLu {
+    position: relative;	
     background-color: #FFC70A;
-    padding: 10px 0; 
-    margin-bottom: 10px;
+    padding: 3em 0; 
+    margin-bottom: 0;
   }
   
   #secondNavLu .container {
@@ -138,6 +202,14 @@ font-size: 1.5rem;
   #secondNavLu .container a:hover {
     text-decoration: none;
   }
+
+
+
+
+
+
+
+
 
 
  
