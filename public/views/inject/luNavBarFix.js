@@ -1,3 +1,6 @@
+/* Inject Location: body_top */
+
+
 document.addEventListener("DOMContentLoaded", function(e){
     const navBar = document.getElementById('navigation');
     const newNav = document.createElement('div');
