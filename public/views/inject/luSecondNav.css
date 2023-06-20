@@ -1,3 +1,4 @@
+/* Inject Location: body_top */
 #navigation .top-bar {
     background-color: #00205B!important;
     /* border-bottom: 0.25rem solid #FFC70A; */
@@ -20,7 +21,18 @@
     border-bottom: none!important;
 }
 
+/* changing order of the content after expand all/collapse all btn */
+#res_accordion {
+    display: flex;
+    flex-direction: column;
+}
 
+#res_accordion > .panel.panel-default {
+    order: 2;
+}
+.upper-record-details {
+}
+/* changing order of the content after expand all/collapse all btn */
 h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     color: #00205B;
 }
