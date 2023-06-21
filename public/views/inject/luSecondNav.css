@@ -1,5 +1,13 @@
 /* Inject Location: body_top */
 
+/* Hiding Records icon and dates in collection organization tab*/
+.dl-horizontal {
+    display: none;
+}
+.large-badge.align-center.record {
+    display: none;
+}
+/* Hiding Records icon and dates in collection organization tab*/
 
 #navigation .top-bar {
     background-color: #00205B!important;
