@@ -1,4 +1,4 @@
-/* Inject Location: body_top */
+<!-- Inject Location: head -->
 
 function openBtn() {
     const elem = document.getElementById('contactUsContent');
