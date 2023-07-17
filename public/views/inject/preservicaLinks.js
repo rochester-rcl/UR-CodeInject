@@ -1,5 +1,4 @@
-/* Inject Location: body_top */
-
+/* Inject Location: head */
 
 document.addEventListener("DOMContentLoaded", function(e){
     const header = document.querySelector('#add_desc .panel-body .note .otherfindaid.single_note h3');
