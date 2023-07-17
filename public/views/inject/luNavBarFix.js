@@ -1,4 +1,4 @@
-/* Inject Location: head */
+/* Inject Location: body_top */
 
 document.addEventListener("DOMContentLoaded", function(e){
     const navBar = document.getElementById('navigation');
