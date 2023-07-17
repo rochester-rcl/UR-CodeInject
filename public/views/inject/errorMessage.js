@@ -1,5 +1,4 @@
-/* Inject Location: body_top */
-
+/* Inject Location: head */
 // Error Message
 document.addEventListener("DOMContentLoaded", function(e){
     const errorMessage = document.querySelector('.alert.alert-info.alert-dismissible');
