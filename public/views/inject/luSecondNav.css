@@ -69,7 +69,7 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
 }
 
 
-.col-sm-9 {
+.row.has-resizable-content .col-sm-9 {
 	display: flex;
     flex-direction: column-reverse;
 }
