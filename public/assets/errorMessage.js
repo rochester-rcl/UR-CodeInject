@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function(e){
   <ul>
   <li> Make sure that all search terms are spelled correctly.</li>
   <li>Try more general search terms.</li>
-<li>Add a search row using the + sign at the end of the search to create a Boolean search. 
-Not all collections have been processed to the same level of detail. If you can’t find what you are looking for, please contact us. </li>
+<li>Add a search row using the + sign at the end of the search to create a Boolean search.</li>
+<li>Not all collections have been processed to the same level of detail. If you can’t find what you are looking for, please contact us. </li>
   </ul>
     `
       });
