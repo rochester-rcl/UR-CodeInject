@@ -20,5 +20,4 @@ document.addEventListener("DOMContentLoaded", function(e){
       </div>
     `
     navBar.appendChild(newNav);
-    console.log('luTesting');
       });
