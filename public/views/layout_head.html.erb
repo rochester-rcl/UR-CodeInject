@@ -22,7 +22,7 @@
   <%
     end
     i = 0
-    inject = false
+    inject = true
     File.open(context + "/inject/" + file, "r") do |f|
       f.each_line do |line|
         i += 1
