@@ -54,6 +54,10 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     font-size: 1.1em;
 }
 
+/* hiding internal preservica link */
+#add_desc .panel-body .note .otherfindaid:first-child {
+	display: none;
+}
 
 /* changing order of the content after expand all/collapse all btn */
 #res_accordion {
