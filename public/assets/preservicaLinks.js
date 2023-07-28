@@ -9,7 +9,4 @@ document.addEventListener("DOMContentLoaded", function(e){
     header[1].innerHTML = 'Access Digital Version';
     internalHeader.innerHTML = 'Access Digital Version';
     boxInfo[0].style.display = 'none';
-    `
       });
-
-
