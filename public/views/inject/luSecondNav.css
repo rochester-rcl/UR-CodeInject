@@ -71,7 +71,8 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
 
 .row.has-resizable-content .col-sm-9 {
 	display: flex;
-    flex-direction: column-reverse;
+    	flex-direction: column-reverse;
+	justify-content: flex-end;
 }
 
 .upper-record-details {
