@@ -203,7 +203,25 @@ font-size: 1.5rem;
     text-decoration: none;
   }
 
+#header .headerSurvey {
+	background-color: #00205b;
+	color: white;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	padding: 1em;
+}
 
+#header .headerSurvey a {
+	color: #FFC70a;
+	text-decoration: underline;
+}
+
+
+#header .headerSurvey a:hover{
+	text-decoration: none;
+}
 
 
 
