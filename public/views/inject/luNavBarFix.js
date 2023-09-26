@@ -21,3 +21,13 @@ document.addEventListener("DOMContentLoaded", function(e){
     `
     navBar.appendChild(newNav);
       });
+
+
+document.addEventListener("DOMContentLoaded", function(e){
+    const navBar = document.getElementById('header');
+    const newNav = document.createElement('div');
+    newNav.innerHTML = ` 
+      <div class="headerSurvey"><p>What do you think about the new Archivesspace? Will you take this <a> Quick Survey </a> to help us improve your experience?</p></div>
+    `
+    navBar.prepend(newNav);
+      });
