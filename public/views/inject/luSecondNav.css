@@ -251,5 +251,8 @@ font-size: 1.5rem;
 
 
 
-
+/* changing the position of objects */
+.row.objects {
+  display: block!important;
+}
  
