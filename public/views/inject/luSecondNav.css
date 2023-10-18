@@ -254,4 +254,7 @@ font-size: 1.5rem;
 .row.objects {
   display: block!important;
 }
- 
+ /* fixing content got hidden in Collection Organization */
+.infinite-record-wrapper {
+    height: auto;
+}
