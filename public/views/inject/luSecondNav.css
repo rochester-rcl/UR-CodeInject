@@ -95,9 +95,11 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     flex-direction: column;
 }
 }
+/*
 #accessible_slider {
 	display: none;
 }
+*/
 /* adding horizpntal scroll bar */
 .largetree-container td, .largetree-container .table-cell {
   overflow: visible;
