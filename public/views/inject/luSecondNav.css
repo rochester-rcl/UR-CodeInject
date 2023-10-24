@@ -276,3 +276,7 @@ font-size: 1.5rem;
 .infinite-record-wrapper {
     height: auto;
 }
+ /* Hiding home button */
+.nav.nav.navbar-nav li:nth-child(1) {
+    display: none;
+}
