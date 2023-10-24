@@ -95,12 +95,12 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     flex-direction: column;
 }
 }
-/*
+
 #accessible_slider {
 	display: none;
 }
-*/
-/* changing color and position of resize bar*/
+
+/* changing color and position of resize bar
 @media (min-width: 992px) {
 	
 #sidebar.resizable-sidebar .resizable-sidebar-handle {
@@ -109,6 +109,8 @@ right: 0;
 background-color: #0ae6ff;
 }
 }
+
+*/
 /* adding horizpntal scroll bar */
 .largetree-container td, .largetree-container .table-cell {
   overflow: visible;
