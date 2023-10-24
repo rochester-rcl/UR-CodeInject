@@ -144,6 +144,9 @@ background-color: #0ae6ff;
     	align-items: center;
     	justify-content: center;
     }
+    #content .row:nth-child(3){
+    flex-direction: column-reverse;
+}
 }
 
 
