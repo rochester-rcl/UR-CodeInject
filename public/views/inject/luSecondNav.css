@@ -252,7 +252,11 @@ font-size: 1.5rem;
 /* changing the position of filter bar to the left */
 #content .row:nth-child(3){
     display:flex;
-	flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+#content #main-content {
+    display: flex;
+    flex-direction: row;
 }
 /*
 #content .row:nth-child(3) .col-sm-9 {
