@@ -90,11 +90,7 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     flex-direction: row-reverse;
     width: 100%;
 }
-@media (max-width: 992px) {
-.row.has-resizable-content, #notes_row {
-    flex-direction: column;
-}
-}
+
 
 #accessible_slider {
 	display: none;
@@ -115,41 +111,6 @@ background-color: #0ae6ff;
 .largetree-container td, .largetree-container .table-cell {
   overflow: visible;
 }
-
-
-@media screen and (max-width: 767px) {
-    .row {
-        margin-top: 15px;
-    }
-
-    .aboutArchive {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .aboutArchive .aboutSection,
-    .aboutArchive .accessSection {
-    width: 100%!important;
-    }
-    #secondNavLu .container {
-        flex-direction: column;
-        gap:1em;
-    }
-    .secondNavLogo {
-	position: static;
-    }
-    #secondNavLu {
-	padding: 2.5em 0; 
-    	display: flex;
-    	flex-direction: column;
-    	align-items: center;
-    	justify-content: center;
-    }
-    #content .row:nth-child(3){
-    flex-direction: column-reverse;
-}
-}
-
-
 
 .aboutArchive {
     display: flex;
@@ -282,4 +243,43 @@ font-size: 1.5rem;
  /* Hiding home button */
 .nav.nav.navbar-nav li:nth-child(1) {
     display: none;
+}
+
+@media (max-width: 992px) {
+.row.has-resizable-content, #notes_row {
+    flex-direction: column;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    .row {
+        margin-top: 15px;
+    }
+
+    .aboutArchive {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .aboutArchive .aboutSection,
+    .aboutArchive .accessSection {
+    width: 100%!important;
+    }
+    #secondNavLu .container {
+        flex-direction: column;
+        gap:1em;
+    }
+    .secondNavLogo {
+	position: static;
+    }
+    #secondNavLu {
+	padding: 2.5em 0; 
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    }
+    #content .row:nth-child(3){
+    flex-direction: column-reverse;
+}
 }
