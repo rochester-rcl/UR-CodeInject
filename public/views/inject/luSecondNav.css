@@ -72,7 +72,7 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
 .row.has-resizable-content .col-sm-9 {
 	display: flex;
     	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 .upper-record-details {
