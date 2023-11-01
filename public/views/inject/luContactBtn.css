@@ -76,7 +76,7 @@
     .contactUs #contactUsContent {
     width: 100%;
     }
-    .contactUs .openBtn {
+    .contactUs .openBtn, .contactUs .quickSurvey {
     margin-right: 1em;
     }
     }
