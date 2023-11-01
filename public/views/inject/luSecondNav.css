@@ -245,6 +245,15 @@ font-size: 1.5rem;
     display: none;
 }
 
+/* Hiding container inventory tab and styling collection organization */
+.col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills li:nth-child(3) {
+  display: none;
+}
+
+.tabbing.nav-pills>li:nth-child(2) a {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
 @media (max-width: 992px) {
 .row.has-resizable-content, #notes_row {
     flex-direction: column;
