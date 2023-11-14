@@ -218,10 +218,13 @@ font-size: 1.5rem;
     display:flex;
     flex-direction: row-reverse;
 }
-#main-content,div#main-content.row.resources {
+
+div#main-content.row.resources,
+#content div#main-content.row {
     display: flex;
     flex-direction: row;
 }
+
 
 div#main-content.repositories {
     flex-direction: column;
