@@ -218,9 +218,13 @@ font-size: 1.5rem;
     display:flex;
     flex-direction: row-reverse;
 }
-#content #main-content {
+#main-content {
     display: flex;
     flex-direction: row;
+}
+
+div#main-content.repositories {
+    flex-direction: column;
 }
 /*
 #content .row:nth-child(3) .col-sm-9 {
