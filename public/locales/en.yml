@@ -1,5 +1,7 @@
 en:
+  cont_arr: Finding Aid View
   search_results:
+    primary_type: Record Type
     no_results: |
         <p>No records found.</p>
         <p> • Make sure that all search terms are spelled correctly.</p>
@@ -28,5 +30,4 @@ en:
       RestrictedCurApprSpecColl: 2 - Library imposed access restriction
   brand:
     title: "UR Archives & Special Collections"
-
   
