@@ -1,4 +1,4 @@
-/* Inject Location: body_top */
+/* Inject Location: head */
 .contactUs {
     position: fixed;
     bottom: 5%;
@@ -9,14 +9,33 @@
     z-index: 1;
     }
     .contactUs button {
-    background-color: #FFC70A;
-    color: #00205B;
     border: none;
     padding: 10px 35px;
     font-weight: 700;
     font-size: 1.1em;
     border-radius: 5px;
     box-shadow: 0 0.938em 2.188em rgb(50 50 93 / 15%), 0 0.313em 0.938em rgb(0 0 0 / 10%);
+    }
+    .contactUs .openBtn {
+    width: 13em;
+    background-color: rgb(255,199,10);
+    }
+    .contactUs .quickSurvey {
+    width: 13em;
+    margin-top: 1em;
+    background-color: rgb(0,79,111);
+    color: #FFC70A;
+    }
+    
+    .contactUs .quickSurvey:hover {
+    background-color:  #FFC70A;
+    color: #00205B;
+    }
+
+    .contactUs .toggleBtn {
+    margin-top: 1em;
+    background-color: rgb(0,79,111, 0.7);
+    color: #FFC70A;
     }
     .contactUs #contactUsContent {
     display: none;
@@ -63,7 +82,9 @@
     .contactUs #contactUsContent {
     width: 100%;
     }
-    .contactUs .openBtn {
+    .contactUs .openBtn, 
+    .contactUs .quickSurvey,
+    .contactUs .toggleBtn {
     margin-right: 1em;
     }
     }
