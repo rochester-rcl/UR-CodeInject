@@ -1,0 +1,30 @@
+en:
+  search_results:
+    no_results: |
+        <p>No records found.</p>
+        <p> • Make sure that all search terms are spelled correctly.</p>
+        <p> • Try more general search terms.</p>
+        <p> • Add a search row using the + sign at the end of the search to create a Boolean search.</p>
+        <p> • Not all collections have been processed to the same level of detail. If you can’t find what you are looking for, please contact us.</p>
+        <p>No records found. Please contact the Archives Center for help searching these collections.</p>
+    filter:
+      repository: Library
+      used_within_published_repository: Library
+
+  search-limits:
+    repository: Library
+    repositories: Libraries
+
+  repository:
+    _singular: Library
+    _plural: Libraries
+    what: What's in this Library?
+    details: Library Details
+
+  enumerations:
+    linked_agent_archival_record_relators:
+      rps: Library
+    restriction_type:
+      RestrictedCurApprSpecColl: 2 - Library imposed access restriction
+
+  
