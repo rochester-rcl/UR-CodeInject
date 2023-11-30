@@ -1,5 +1,7 @@
 /* Inject Location: body_top */
-
+.modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
+  display: none;
+}
 /* Hiding Records icon and dates in collection organization tab*/
 .dl-horizontal {
     display: none;
@@ -263,9 +265,6 @@ div#main-content.repositories {
     border-bottom-right-radius: 40px;
 }
 
-div.modal-dialog .modal-content .modal-body section.panel.panel-default:nth-child(2) {
-  display: none;
-}
 
 @media (max-width: 992px) {
 .row.has-resizable-content, #notes_row {
