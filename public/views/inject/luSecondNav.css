@@ -267,10 +267,10 @@ div#main-content.repositories {
 /* Removing second box from Citation */
 
 .modal-dialog .modal-content .modal-body .panel.panel-default.mt15px {
-  display: block;
+  display: block!important;
 }
 .modal-dialog .modal-content .modal-body .panel.panel-default{
-  display: none;
+  display: none!important;
 }
 
 @media (max-width: 992px) {
