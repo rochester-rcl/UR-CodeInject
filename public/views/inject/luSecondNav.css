@@ -196,7 +196,8 @@ font-size: 1.5rem;
 
 
 #header .headerSurvey {
-	background-color: #00205b;
+/* 	background-color: #00205b; */
+	background-color: red;
 	color: white;
 	display:flex;
 	justify-content: center;
