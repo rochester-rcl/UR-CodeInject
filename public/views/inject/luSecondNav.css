@@ -230,15 +230,6 @@ div#main-content.repositories {
     flex-direction: column;
 }
 
-/*
-#content .row:nth-child(3) .col-sm-9 {
-    order: 2;
-}
-#content .row:nth-child(3) #filter-sidebar {
-  order: 1;
-}
-*/
-
 
 /* changing the position of objects */
 .row.objects {
@@ -261,6 +252,10 @@ div#main-content.repositories {
 .tabbing.nav-pills>li:nth-child(2) a {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
+}
+/* Hiding citation block */
+.modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
+  display: none;
 }
 @media (max-width: 992px) {
 .row.has-resizable-content, #notes_row {
