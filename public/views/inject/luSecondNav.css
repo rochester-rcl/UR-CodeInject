@@ -1,7 +1,5 @@
 /* Inject Location: body_top */
-.modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
-  display: none;
-}
+
 /* Hiding Records icon and dates in collection organization tab*/
 .dl-horizontal {
     display: none;
@@ -196,8 +194,7 @@ font-size: 1.5rem;
 
 
 #header .headerSurvey {
-/* 	background-color: #00205b; */
-	background-color: red;
+	background-color: #00205b;
 	color: white;
 	display:flex;
 	justify-content: center;
@@ -233,15 +230,6 @@ div#main-content.repositories {
     flex-direction: column;
 }
 
-/*
-#content .row:nth-child(3) .col-sm-9 {
-    order: 2;
-}
-#content .row:nth-child(3) #filter-sidebar {
-  order: 1;
-}
-*/
-
 
 /* changing the position of objects */
 .row.objects {
@@ -265,8 +253,10 @@ div#main-content.repositories {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
 }
-
-
+/* Hiding citation block */
+.modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
+  display: none;
+}
 @media (max-width: 992px) {
 .row.has-resizable-content, #notes_row {
     flex-direction: column;

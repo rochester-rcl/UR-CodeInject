@@ -8,6 +8,7 @@ en:
         <p> • Not all collections have been processed to the same level of detail. If you can’t find what you are looking for, please contact us.</p>
         <p>No records found. Please contact the Archives Center for help searching these collections.</p>
     filter:
+      primary_type: Record Type
       repository: Library
       used_within_published_repository: Library
 
@@ -26,5 +27,10 @@ en:
       rps: Library
     restriction_type:
       RestrictedCurApprSpecColl: 2 - Library imposed access restriction
+  brand:
+    title: UR Archives & Special Collections
+    welcome_page_title: Homepage
+  actions:
+    hierarch: Finding Aid View
 
   
