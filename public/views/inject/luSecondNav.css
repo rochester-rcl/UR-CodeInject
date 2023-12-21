@@ -257,6 +257,16 @@ div#main-content.repositories {
 .modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
   display: none;
 }
+
+/* Changing the position of Expand/collapse button */
+.row.has-resizable-content .col-sm-9 .acc_holder.clear {
+  display: flex; 
+  flex-direction: column-reverse;
+}
+.row.has-resizable-content .col-sm-9 .acc_holder.clear .btn.btn-primary.btn-sm.acc_button {
+  width: 10%; 
+}
+
 @media (max-width: 992px) {
 .row.has-resizable-content, #notes_row {
     flex-direction: column;
