@@ -1,7 +1,7 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
 
 <% non_folder = %w(summary langmaterial abstract accessrestrict userestrict physdesc bioghist arrangement) %>
-<% folder = %w(processinfo acqinfo accruals custodhist relatedmaterial altformavail separatedmaterial otherfindaid note_bibliography phystech physloc appraisal originalsloc extent materialspec inscription physfacet dimensions edition fileplan legalstatus odd note note_index) %>
+<% folder = %w(processinfo acqinfo accruals custodhist prefercite relatedmaterial altformavail separatedmaterial otherfindaid note_bibliography phystech physloc appraisal originalsloc extent materialspec inscription physfacet dimensions edition fileplan legalstatus odd note note_index) %>
 <div class="upper-record-details">
 	<% if @result.agents && Array(@result.agents['creator']).length > 0 %>
 		<%= render partial: 'shared/agents_list', locals: {:list => {'creator' => @result.agents['creator']}, :heading_size => 'h2'} %>
