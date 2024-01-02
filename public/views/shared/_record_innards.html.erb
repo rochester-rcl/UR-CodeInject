@@ -1,6 +1,6 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
-
-<% non_folder = %w(summary langmaterial abstract accessrestrict userestrict physdesc bioghist arrangement) %>
+<% bioghistlst = %w(bioghist) %>
+<% non_folder = %w(summary langmaterial abstract accessrestrict userestrict physdesc arrangement) %>
 <% folder = %w(processinfo acqinfo accruals custodhist prefercite relatedmaterial altformavail separatedmaterial otherfindaid note_bibliography phystech physloc appraisal originalsloc extent materialspec inscription physfacet dimensions edition fileplan legalstatus odd note note_index) %>
 <div class="upper-record-details">
 	<% if @result.agents && Array(@result.agents['creator']).length > 0 %>
@@ -15,6 +15,14 @@
 		<% @result.lang_materials.each do |lang_material| %>
 			<p class="language"><%= inheritance(lang_material['_inherited']).html_safe %>
 				<%= t('enumerations.language_iso639_2.' + lang_material['language'])%>
+
+	<% bioghistlst.each do |type| %>
+          <% (@result.notes[type] || []).each do |note_struct| %>
+            <% unless note_struct['note_text'].blank? %>
+              <%= render partial: 'shared/single_note', locals: {:type => type, :note_struct => note_struct}   %>
+            <% end %>
+          <% end %>
+        <% end %>
 
     <% over = @result.note('scopecontent') %>
     <% if over.blank?
