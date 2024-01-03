@@ -243,7 +243,20 @@ div#main-content.repositories {
 .nav.nav.navbar-nav li:nth-child(1) {
     display: none;
 }
-
+ /* Reordering View digital material button */
+.tabbing.nav-pills>li:nth-child(4) a {
+  border-radius: 0;
+}
+.tabbing.nav-pills>li:nth-child(4) {
+  order: 2;
+}
+.tabbing.nav-pills>li:nth-child(2) {
+  order: 4;
+  
+}
+.col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills {
+  display: flex;
+}
 /* Hiding container inventory tab and styling collection organization */
 .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills li:nth-child(3) {
   display: none;
