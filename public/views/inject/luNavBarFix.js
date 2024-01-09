@@ -42,3 +42,9 @@ document.addEventListener("DOMContentLoaded", function(e){
               </a>
     `
       });
+
+/* Adjusting placeholder in search bar */
+document.addEventListener("DOMContentLoaded", function(e){
+    let searchContent = document.getElementById("filter_q0");
+    searchContent.placeholder = 'Search this collection';
+      });
