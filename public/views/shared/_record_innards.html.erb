@@ -1,27 +1,13 @@
 <!-- Look for '_inherited' and '*_inherited' properties -->
-<% non_folder = %w(summary langmaterial bioghist accessrestrict userestrict) %>
-<% folder = %w(physdesc abstract arrangement processinfo acqinfo accruals custodhist prefercite relatedmaterial altformavail separatedmaterial otherfindaid note_bibliography phystech physloc appraisal originalsloc extent materialspec inscription physfacet dimensions edition fileplan legalstatus odd note note_index) %>
+<!--Actual location-->
+<!--Put bioghist above scope and content-->
+<% non_folder = %w(summary langmaterial abstract accessrestrict userestrict acqinfo prefercite physdesc arrangement) %>
+<% bioghistlst = %w(bioghist) %>
+<% folder = %w(processinfo accruals custodhist relatedmaterial altformavail separatedmaterial otherfindaid note_bibliography phystech physloc appraisal originalsloc extent materialspec inscription physfacet dimensions edition fileplan legalstatus odd note note_index) %>
+
 <div class="upper-record-details">
-  <% over = @result.note('scopecontent') %>
-  <% if over.blank?
-       over = @result.note('abstract')
-       folder.shift # remove abstract from in-folder notes
 
-     end %>
-  <% unless over.blank? %>
-    <%= render partial: 'shared/single_note', locals: {:type => 'abstract', :note_struct => over} %>
-  <% end %>
-
-  <% unless @result.dates.blank? %>
-    <h2><%= t('resource._public.dates') %></h2>
-    <%= render partial: 'shared/dates', locals: {:dates => @result.dates} %>
-  <% end %>
-
-  <% if @result.agents && Array(@result.agents['creator']).length > 0 %>
-    <%= render partial: 'shared/agents_list', locals: {:list => {'creator' => @result.agents['creator']}, :heading_size => 'h2'} %>
-  <% end %>
-
-  <% non_folder.each do |type| %>
+  <% bioghistlst.each do |type| %>
     <% (@result.notes[type] || []).each do |note_struct| %>
       <% unless note_struct['note_text'].blank? %>
         <%= render partial: 'shared/single_note', locals: {:type => type, :note_struct => note_struct}   %>
@@ -29,20 +15,60 @@
     <% end %>
   <% end %>
 
-  <% unless @result.extents.blank? %>
-    <h2><%= t('resource._public.extent') %></h2>
-    <% @result.extents.each do |ext| %>
-      <p class="extent"><%= inheritance(ext['_inherited']).html_safe %>
-        <%= ext['display']%>
-      </p>
-    <% end %>
+
+  <% over = @result.note('scopecontent') %>
+  <% if over.blank?
+       over = @result.note('abstract')
+       folder.shift # remove abstract from in-folder notes
+
+     end %>
+  <% unless over.blank? %>
+    <%= render partial: 'shared/single_note', locals: {:type => 'abstract', :note_struct => over} #this looks like it was a hack from the aspace devs themselves, don't use this structure
+    %>
+
+
+
+  <% if @result.agents && Array(@result.agents['creator']).length > 0 %>
+    <%= render partial: 'shared/agents_list', locals: {:list => {'creator' => @result.agents['creator']}, :heading_size => 'h2'} %>
   <% end %>
+  <% unless @result.dates.blank? %>
+    <h2><%= t('resource._public.dates') %></h2>
+    <%= render partial: 'shared/dates', locals: {:dates => @result.dates} %>
+  <% end %>
+
 
   <% unless @result.notes.include?('langmaterial') || @result.lang_materials.blank? %>
     <h2><%= t('resource._public.lang') %></h2>
     <% @result.lang_materials.each do |lang_material| %>
       <p class="language"><%= inheritance(lang_material['_inherited']).html_safe %>
         <%= t('enumerations.language_iso639_2.' + lang_material['language'])%>
+
+
+        <% end %>
+
+      <% unless @result.extents.blank? %>
+        <h2><%= t('resource._public.extent') %></h2>
+        <% @result.extents.each do |ext| %>
+          <p class="extent"><%= inheritance(ext['_inherited']).html_safe %>
+            <%= ext['display']%>
+          </p>
+        <% end %>
+      <% end %>
+
+
+        <% non_folder.each do |type| %>
+          <% (@result.notes[type] || []).each do |note_struct| %>
+            <% unless note_struct['note_text'].blank? %>
+              <%= render partial: 'shared/single_note', locals: {:type => type, :note_struct => note_struct}   %>
+            <% end %>
+          <% end %>
+        <% end %>
+
+
+
+
+
+
       </p>
     <% end %>
   <% end %>
@@ -61,6 +87,11 @@
 
 <div class="acc_holder clear" >
   <div class="panel-group" id="res_accordion">
+    <% unless @result.subjects.blank? %>
+      <% x= render partial: 'shared/subjects_list', locals: {:list => @result.subjects} %>
+      <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('subject._plural'),
+                                                             :p_id => 'subj_list', :p_body => x} %>
+    <% end %>
     <% x = render partial: 'shared/multi_notes', locals: {:types => folder} %>
     <% unless x.blank? %>
       <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('resource._public.additional'),
@@ -89,11 +120,7 @@
       <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('pui_agent.related'),
                                                              :p_id => 'agent_list', :p_body => x} %>
     <% end %>
-    <% unless @result.subjects.blank? %>
-      <% x= render partial: 'shared/subjects_list', locals: {:list => @result.subjects} %>
-      <%= render partial: 'shared/accordion_panel', locals: {:p_title =>  t('subject._plural'),
-                                                             :p_id => 'subj_list', :p_body => x} %>
-    <% end %>
+
     <% if (@result.kind_of?(Accession) || @result.kind_of?(Resource)) && !@result.deaccessions.blank? %>
       <% x = render partial: 'shared/present_list', locals: {:list =>  @result.deaccessions.collect{|d| d.fetch('description')}, :list_clss => 'deaccessions'} %>
       <%= render partial: 'shared/accordion_panel', locals: {:p_title => t('deaccessions'), :p_id => 'deaccessions_list', :p_body => x} %>
