@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     const navBar = document.getElementById('header');
     const newNav = document.createElement('div');
     newNav.innerHTML = ` 
-      <div class="headerSurvey"><p>What do you think about the new finding aid interface? Will you take this <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7xm6qVSzNwuUw0GvfRja5wGm4j-Z3eUDePmy1XjjV1wc-fQ/viewform"> User Testing </a> to help us improve your experience?</p></div>
+      <div class="headerSurvey"><p>What do you think about the new finding aid interface? Will you take this <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7xm6qVSzNwuUw0GvfRja5wGm4j-Z3eUDePmy1XjjV1wc-fQ/viewform" target="_blank"> User Testing </a> to help us improve your experience?</p></div>
     `
     navBar.prepend(newNav);
       });
