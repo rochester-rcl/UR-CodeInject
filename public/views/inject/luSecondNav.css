@@ -7,6 +7,10 @@
 .large-badge.align-center.record {
     display: none;
 }
+/* Logo width */
+.col-sm-12.h1 a img {
+    width: 225px;	
+}
 /* Hiding Records icon and dates in collection organization tab*/
 
 #navigation .top-bar {
