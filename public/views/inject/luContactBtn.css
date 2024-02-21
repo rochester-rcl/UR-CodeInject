@@ -1,4 +1,73 @@
 /* Inject Location: head */
+.dropdown {
+  margin-top:1em;
+}
+.dropdown:hover{
+  text-decoration: underline;
+}
+.dropdown .link {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown.active > .dropdown .link,
+.link:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .25rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+#dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.dropdown-menu.information-grid #dropdown-links a {
+  color:#006e99!important;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+.login-form > input {
+  margin-bottom: .5rem;
+}
+
+
 .contactUs {
     position: fixed;
     bottom: 5%;
@@ -74,6 +143,18 @@
     background-color: #004f6f;
     color: #FFC70A;
     }
+    @media screen and (max-width:767px) {
+  .nav.nav.navbar-nav {
+    overflow: hidden;
+  }
+  .dropdown.active > .link + .dropdown-menu {
+  transform: translateY(-200px);
+  }
+  .dropdown {
+  margin-top:0;
+  margin-left: 1em;
+}
+}
     @media screen and (max-width: 500px) {
     .contactUs {
     width: 100%;
