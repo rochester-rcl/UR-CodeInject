@@ -1,6 +1,6 @@
 /* Inject Location: head */
 .dropdown {
-  margin-top:1em;
+  padding:15px 0;
 }
 .dropdown:hover{
   text-decoration: underline;
