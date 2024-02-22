@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
       <button class="link" data-dropdown-button>Contact Us</button>
       <div class="dropdown-menu information-grid">
           <div id="dropdown-links">
-            <a href="https://www.library.rochester.edu/services/forms/contact-rbscp%22 target="_blank">Rare Books and Special Collections</a>
-            <a href="https://www.esm.rochester.edu/sibley/contact/%22 target="_blank">Sibley Music Library</a>
+            <a href="https://www.library.rochester.edu/services/forms/contact-rbscp" target="_blank">Rare Books and Special Collections</a>
+            <a href="https://www.esm.rochester.edu/sibley/contact/" target="_blank">Sibley Music Library</a>
 
             <a href="https://urmc-rochester.libanswers.com/form?queue_id=6183" target="_blank">Edward G.Miner Library</a>
 
-            <a href="https://www.library.rochester.edu/about/staff/dept#38%22 target="_blank">Rossell Hope Robbins Library</a>
+            <a href="https://www.library.rochester.edu/about/staff/dept#38" target="_blank">Rossell Hope Robbins Library</a>
 
-            <a href="https://mag.rochester.edu/about/contact-us/%22 target="_blank">Memorial Art Gallery</a>
+            <a href="https://mag.rochester.edu/about/contact-us/" target="_blank">Memorial Art Gallery</a>
           </div>
       </div>
     </div>
