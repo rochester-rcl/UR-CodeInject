@@ -1,6 +1,6 @@
 /* Inject Location: head */
 .dropdown {
-  padding:15px 0;
+  padding:15px;
 }
 .dropdown:hover{
   text-decoration: underline;
@@ -132,10 +132,6 @@
   .dropdown.active > .link + .dropdown-menu {
   transform: translateY(-200px);
   }
-  .dropdown {
-  margin-top:0;
-  margin-left: 1em;
-}
 }
     @media screen and (max-width: 500px) {
     .contactUs {
