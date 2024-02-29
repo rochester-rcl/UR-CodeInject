@@ -58,3 +58,8 @@ document.addEventListener("DOMContentLoaded", function(e){
 </a>
     `
       });
+/* FIxing text in search page */
+document.addEventListener("DOMContentLoaded", function(e){
+    let header = document.querySelector("#content .row .col-sm-12 .search h2");
+    header.innerHTML = `Search the Archives`;
+      });
