@@ -243,10 +243,6 @@ div#main-content.repositories {
 .infinite-record-wrapper {
     height: auto;
 }
- /* Hiding home button */
-.nav.nav.navbar-nav li:nth-child(1) {
-    display: none;
-}
  /* Reordering View digital material button */
 .tabbing.nav-pills>li:nth-child(4) a {
   border-radius: 0;
