@@ -22,15 +22,6 @@ document.addEventListener("DOMContentLoaded", function(e){
     navBar.appendChild(newNav);
       });
 
-/* Top survey bar */
-document.addEventListener("DOMContentLoaded", function(e){
-    const navBar = document.getElementById('header');
-    const newNav = document.createElement('div');
-    newNav.innerHTML = ` 
-      <div class="headerSurvey"><p>What do you think about the new finding aid interface? Will you take this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXe7jzLaC_zSJTfz8l0az5qXaljZz7wNgToC-44OBmS0gddw/viewform" target="_blank"> Quick Survey </a> to help us improve your experience?</p></div>
-    `
-    navBar.prepend(newNav);
-      });
 
 /* Adding text to the search button */
 document.addEventListener("DOMContentLoaded", function(e){
