@@ -68,63 +68,7 @@
 }
 
 
-.contactUs {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 1;
-    }
-    .contactUs button {
-    border: none;
-    padding: 10px 35px;
-    font-weight: 700;
-    font-size: 1.1em;
-    border-radius: 5px;
-    box-shadow: 0 0.938em 2.188em rgb(50 50 93 / 15%), 0 0.313em 0.938em rgb(0 0 0 / 10%);
-    }
-    .contactUs .quickSurvey {
-    width: 13em;
-    margin-top: 1em;
-    background-color: rgb(0,79,111);
-    color: #FFC70A;
-    }
-    
-    .contactUs .quickSurvey:hover {
-    background-color:  #FFC70A;
-    color: #00205B;
-    }
-    .contactUs #contactUsContent {
-    display: none;
-    flex-direction: column;
-    width:400px;
-    height: auto;
-    padding: 2em;
-    background-color: #f9f9f9;
-    margin-bottom: 1em;
-    border:1px solid #d3d3d3;
-    border-radius: 5px;
-    box-shadow: 0 0.938em 2.188em rgb(50 50 93 / 15%), 0 0.313em 0.938em rgb(0 0 0 / 10%);
-    }
-    .contactUs #contactUsContent button {
-    position:absolute;
-    right:0;
-    top: 0;
-    padding: 10px 18px;
-    border: none;
-    border-right:1px solid #d3d3d3;
-    border-top:1px solid #d3d3d3;
-    border-radius: 5px;
-    background-color: #FFC70A;
-    color: #004f6f;
-    box-shadow: none;
-    }
-    .contactUs button:hover, .contactUs #contactUsContent button:hover {
-    background-color: #004f6f;
-    color: #FFC70A;
-    }
+
     @media screen and (max-width:767px) {
   .nav.nav.navbar-nav {
     overflow: hidden;
@@ -133,18 +77,4 @@
   transform: translateY(-200px);
   }
 }
-    @media screen and (max-width: 500px) {
-    .contactUs {
-    width: 100%;
-    right: 0;
-    }
-    .contactUs #contactUsContent {
-    width: 100%;
-    }
-    .contactUs .openBtn, 
-    .contactUs .quickSurvey,
-    .contactUs .toggleBtn {
-    margin-right: 1em;
-    }
-    }
-    
+   
