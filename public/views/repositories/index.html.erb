@@ -1,0 +1,11 @@
+<div class="row">
+<div class="col-sm-9">
+<br />
+<%= render partial: 'shared/pagination', locals: {:pager => @pager} %>
+<% @json.each do |result| %>
+<%= render partial: 'repositories/repository', locals: {:result => result, :full => false} %>
+
+<% end %>
+<%= render partial: 'shared/pagination', locals: {:pager => @pager} %>
+</div>
+</div>
