@@ -90,7 +90,7 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
 }
 
 /* hiding the default search button-logo */
-  .nav.nav.navbar-nav li:nth-child(9){
+  .nav.nav.navbar-nav li:nth-child(8){
     display: none;
   }
 
