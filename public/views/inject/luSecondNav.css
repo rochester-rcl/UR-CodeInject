@@ -241,14 +241,14 @@ div#main-content.repositories {
   display: flex;
 }
 /* Hiding container inventory tab and styling collection organization */
-.col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills li:nth-child(3) {
+/* .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills li:nth-child(3) {
   display: none;
 }
 
 .tabbing.nav-pills>li:nth-child(2) a {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-}
+} */
 /* Hiding citation block */
 .modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
   display: none;
