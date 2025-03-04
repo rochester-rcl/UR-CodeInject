@@ -211,10 +211,7 @@ font-size: 1.5rem;
 .tabbing.nav-pills>li:nth-child(4) {
   order: 2;
 }
-.tabbing.nav-pills>li:nth-child(2) {
-  order: 4;
-  
-}
+
 .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills {
   display: flex;
 }
