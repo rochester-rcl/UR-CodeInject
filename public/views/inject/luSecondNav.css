@@ -89,11 +89,6 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     display: table-header-group;
 }
 
-/* hiding the default search button-logo */
-  .nav.nav.navbar-nav li:nth-child(8){
-    display: none;
-  }
-
 /* adding horizpntal scroll bar */
 .largetree-container td, .largetree-container .table-cell {
   overflow: visible;
@@ -200,23 +195,6 @@ font-size: 1.5rem;
 	text-decoration: none;
 }
 
-/* changing the position of filter bar to the left */
-/* #content .row:nth-child(3){
-    display:flex;
-    flex-direction: row-reverse;
-}
-
-div#main-content.row.resources,
-#content div#main-content.row {
-    display: flex;
-    flex-direction: row;
-}
-
-
-div#main-content.repositories {
-    flex-direction: column;
-} */
-
 
 /* changing the position of objects */
 .row.objects {
@@ -233,22 +211,11 @@ div#main-content.repositories {
 .tabbing.nav-pills>li:nth-child(4) {
   order: 2;
 }
-.tabbing.nav-pills>li:nth-child(2) {
-  order: 4;
-  
-}
+
 .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills {
   display: flex;
 }
-/* Hiding container inventory tab and styling collection organization */
-.col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills li:nth-child(3) {
-  display: none;
-}
 
-.tabbing.nav-pills>li:nth-child(2) a {
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
 /* Hiding citation block */
 .modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
   display: none;
