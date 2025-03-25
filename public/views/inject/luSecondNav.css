@@ -88,7 +88,6 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
 .bioghist.single_note{
     display: table-header-group;
 }
-
 /* adding horizpntal scroll bar */
 .largetree-container td, .largetree-container .table-cell {
   overflow: visible;
