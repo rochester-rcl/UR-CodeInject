@@ -54,3 +54,17 @@ document.addEventListener("DOMContentLoaded", function(e){
     let header = document.querySelector("#content .row .col-sm-12 .search h2");
     header.innerHTML = `Search the Archives`;
       });
+
+
+/* print button on item page*/
+document.addEventListener("DOMContentLoaded", function(e){
+    let newPrintBtn = document.createElement("li");    
+    let btnList = document.querySelector("#info_row .page_actions .text-right .list-inline");
+    newPrintBtn.classList.add("large-badge", "align-center");
+    newPrintBtn.innerHTML = `
+        <button onClick="window.print()" class="btn btn-default page_action print">
+            <i class="fa fa-file-pdf-o fa-3x"></i><br><span class="print-label">Print</span><span class="generating-label" style="display: none">Generating</span>
+        </button>
+    `;
+    btnList.prepend(newPrintBtn);
+});
