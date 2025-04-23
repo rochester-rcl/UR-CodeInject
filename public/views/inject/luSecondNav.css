@@ -230,13 +230,15 @@ div#main-content.repositories {
 .tabbing.nav-pills>li:nth-child(4) a {
   border-radius: 0;
 }
-.tabbing.nav-pills>li:nth-child(4) {
+
+/* adjusted the order of the pill button*/
+/* .tabbing.nav-pills>li:nth-child(4) {
   order: 2;
 }
 .tabbing.nav-pills>li:nth-child(2) {
   order: 4;
   
-}
+} */
 .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills {
   display: flex;
 }
