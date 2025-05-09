@@ -89,11 +89,6 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     display: table-header-group;
 }
 
-/* hiding the default search button-logo */
-  .nav.nav.navbar-nav li:nth-last-child(2){
-    display: none;
-  }
-
 /* adding horizpntal scroll bar */
 .largetree-container td, .largetree-container .table-cell {
   overflow: visible;
