@@ -226,6 +226,11 @@ div#main-content.repositories {
   border-radius: 0;
 }
 
+/* border radius for last pill button*/
+.tabbing.nav-pills > li:last-child a {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
 /* adjusted the order of the pill button*/
 /* .tabbing.nav-pills>li:nth-child(4) {
   order: 2;
