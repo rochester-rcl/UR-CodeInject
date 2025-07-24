@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
 /* Adding text to the search button */
 document.addEventListener("DOMContentLoaded", function(e){
-    let searchBtn = document.querySelector("#collapsemenu .nav.nav.navbar-nav li:nth-child(8)");
+    let searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav .nav-item:last-child");
     searchBtn.innerHTML = ` 
       <a href="/search?reset=true" title="Search The Archives">
                 <span class="fa fa-search" aria-hidden="true"></span>
