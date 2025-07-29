@@ -135,7 +135,14 @@ font-size: 1.5rem;
     border-bottom: none;
 }
 
+/* search button on nav bar*/
+#navigation .navbar .collapse .navbar-nav .nav-item:last-child {
+	display: flex;
+}
 
+#navigation .navbar .collapse .navbar-nav .nav-item:last-child a {
+	padding: 0.5rem 1rem;
+}
 .navbar {
     margin-bottom: 0!important;
     border: none!important;
@@ -195,23 +202,6 @@ font-size: 1.5rem;
 	text-decoration: none;
 }
 
-/* changing the position of filter bar to the left */
-/* #content .row:nth-child(3){
-    display:flex;
-    flex-direction: row-reverse;
-}
-
-div#main-content.row.resources,
-#content div#main-content.row {
-    display: flex;
-    flex-direction: row;
-}
-
-
-div#main-content.repositories {
-    flex-direction: column;
-} */
-
 
 /* changing the position of objects */
 .row.objects {
@@ -231,26 +221,11 @@ div#main-content.repositories {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
 }
-/* adjusted the order of the pill button*/
-/* .tabbing.nav-pills>li:nth-child(4) {
-  order: 2;
-}
-.tabbing.nav-pills>li:nth-child(2) {
-  order: 4;
-  
-} */
+
 .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills {
   display: flex;
 }
-/* Hiding container inventory tab and styling collection organization */
-/* .col-sm-9.text-center.tabbing.navbar.navbar-default .tabbing.nav.nav-pills li:nth-child(3) {
-  display: none;
-}
 
-.tabbing.nav-pills>li:nth-child(2) a {
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-} */
 /* Hiding citation block */
 .modal-dialog .modal-content .modal-body .panel.panel-default:nth-child(2) {
   display: none;
@@ -301,5 +276,9 @@ div#main-content.repositories {
     }
     #content .row:nth-child(3){
     flex-direction: column-reverse;
-}
+    }
+/* search button on nav bar*/
+    #navigation .navbar .collapse .navbar-nav .nav-item:last-child a {
+	padding: 0.5rem 0;
+    }
 }
