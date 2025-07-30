@@ -136,11 +136,11 @@ font-size: 1.5rem;
 }
 
 /* search button on nav bar*/
-#navigation .navbar .collapse .navbar-nav .nav-item:last-child {
+#navigation .navbar .collapse .navbar-nav .nav-item:nth-child(8) {
 	display: flex;
 }
 
-#navigation .navbar .collapse .navbar-nav .nav-item:last-child a {
+#navigation .navbar .collapse .navbar-nav .nav-item:nth-child(8) a {
 	padding: 0.5rem 1rem;
 }
 .navbar {
