@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
       const blueNavbar = document.querySelector(
  
-        "#collapsemenu .nav.nav.navbar-nav"
+        "#navigation .navbar .collapse .navbar-nav"
  
       );
  
       const classificationBtn = document.createElement("li");
  
       const contactUsBtn = document.createElement("li");
-      const searchBtn = document.querySelector("#collapsemenu .nav.nav.navbar-nav li:nth-child(8)")
+      const searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)")
  
       contactUsBtn.innerHTML = `
  
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       `;
  
       blueNavbar.appendChild(contactUsBtn);
-  blueNavbar.insertBefore(classificationBtn, searchBtn);
+      blueNavbar.insertBefore(classificationBtn, searchBtn);
     
  
     });
