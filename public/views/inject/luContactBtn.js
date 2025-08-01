@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       const classificationBtn = document.createElement("li");
       classificationBtn.classList.add('nav-item p-2');
       const contactUsBtn = document.createElement("li");
-      const searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)")
+      const searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
  
       contactUsBtn.innerHTML = `
  
@@ -56,8 +56,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
       blueNavbar.appendChild(contactUsBtn);
       blueNavbar.insertBefore(classificationBtn, searchBtn);
-    
- 
     });
 
 
