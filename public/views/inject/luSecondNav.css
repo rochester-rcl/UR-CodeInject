@@ -57,8 +57,14 @@ h1, .h1,h2, .h2, h2 > a, h3 > a, h3 {
     font-weight: normal;
     font-size: 1.1em;
 }
+/* headers in landing page and plus button*/
+.search.pt-3 #advanced_search .row .col-sm-2.form-group.text-left.align-self-end {
+    margin: 0 0 1rem 0;
+}
 
-
+.row .col-sm-12 h3 {
+    margin-top: 20px;
+}
 /* changing order of the content after expand all/collapse all btn */
 #res_accordion {
     display: flex;
