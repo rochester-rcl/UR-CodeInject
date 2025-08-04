@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       const classificationBtn = document.createElement("li");
       classificationBtn.classList.add('nav-item p-2');
       const contactUsBtn = document.createElement("li");
-      const searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
+      let searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
  
       contactUsBtn.innerHTML = `
  
@@ -45,8 +45,13 @@ document.addEventListener("DOMContentLoaded", function (e) {
         </div>
  
       `;
- 
-    
+
+    searchBtn.innerHTML = ` 
+      <a href="/search?reset=true" title="Search The Archives">
+                <span class="fa fa-search" aria-hidden="true"></span>
+                 Search<span class="sr-only">Search The Archives</span>
+              </a>
+    `
  
       classificationBtn.innerHTML = `
  
@@ -74,6 +79,7 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+
 
 
 
