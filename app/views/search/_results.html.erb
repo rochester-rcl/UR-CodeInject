@@ -1,0 +1,34 @@
+<%
+  title = t("search_results.title") if title.nil?
+%>
+
+<div class="d-flex">
+  <div class="col-md-3">
+    <%= render_aspace_partial :partial => "search/filter" %>
+  </div>
+  <div class="col-md-9">
+    <div class="record-toolbar  d-flex align-items-center">
+      <% unless @hide_csv_download %>
+        <div class="btn-group ml-auto">
+          <%= link_to I18n.t("actions.export_csv"), request.parameters.merge({ :format => :csv, :fields => fields}), id: "searchExport",  class:  "btn btn-sm btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+    <div class="record-pane">
+      <%= link_to_help :topic => "search" %>
+      <% if !params[:linker] %>
+        <h3><%= title %></h3>
+
+        <% if result['primary_type'] == 'subject' && props[:subject_usage_count] %>
+          <div class="subject-usage-info">
+            <small class="text-muted">
+              Used in <%= pluralize(props[:subject_usage_count], 'record') %>
+            </small>
+          </div>
+        <% end %>
+
+      <% end %>
+      <%= render_aspace_partial :partial => "search/listing" %>
+    </div>
+  </div>
+</div>
