@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
       const blueNavbar = document.querySelector(
  
-        "#collapsemenu .nav.nav.navbar-nav"
+        "#navigation .navbar .collapse .navbar-nav"
  
       );
  
       const classificationBtn = document.createElement("li");
- 
+      classificationBtn.classList.add('nav-item', 'p-2');
       const contactUsBtn = document.createElement("li");
-      const searchBtn = document.querySelector("#collapsemenu .nav.nav.navbar-nav li:nth-child(8)")
+      let searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
  
       contactUsBtn.innerHTML = `
  
@@ -46,8 +46,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
       `;
  
-    
- 
       classificationBtn.innerHTML = `
  
     <a href="https://archives.lib.rochester.edu/classifications">Classifications</a>
@@ -55,9 +53,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       `;
  
       blueNavbar.appendChild(contactUsBtn);
-  blueNavbar.insertBefore(classificationBtn, searchBtn);
-    
- 
+      blueNavbar.insertBefore(classificationBtn, searchBtn);
     });
 
 
@@ -76,6 +72,9 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+
+
+
 
 
 
