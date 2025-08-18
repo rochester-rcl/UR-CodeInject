@@ -22,18 +22,6 @@ document.addEventListener("DOMContentLoaded", function(e){
     navBar.appendChild(newNav);
       });
 
-
-/* Adding text to the search button */
-// document.addEventListener("DOMContentLoaded", function(e){
-//     let searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
-//     searchBtn.innerHTML = ` 
-//       <a href="/search?reset=true" title="Search The Archives">
-//                 <span class="fa fa-search" aria-hidden="true"></span>
-//                  Search<span class="sr-only">Search The Archives</span>
-//               </a>
-//     `
-//       });
-
 /* Adjusting placeholder in search bar */
 document.addEventListener("DOMContentLoaded", function(e){
     let searchContent = document.getElementById("filter_q0");
@@ -68,4 +56,5 @@ document.addEventListener("DOMContentLoaded", function(e){
     `;
     btnList.prepend(newPrintBtn);
 });
+
 
