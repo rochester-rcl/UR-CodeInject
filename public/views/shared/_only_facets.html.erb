@@ -1,7 +1,6 @@
 <% unless @facets.blank? %>
 <h3><%= t('search_results.filter.add')%>: </h3>
 <dl id="facets">
-
   <%
     preferred_facet_order = %w(repository primary_type agents subjects langcode)
     ordered_facet_types = @facets.keys.sort{|a,b|
@@ -46,6 +45,7 @@
         ordered_facets = facet_group.sort_by do |facet|
           order_map[facet.label] || Float::INFINITY
         end
+        facet_group = ordered_facets
       end
     %>
     <div id="<%= t("search_results.filter.#{type}").downcase %>-facet">
