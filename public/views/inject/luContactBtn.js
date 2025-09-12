@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       );
  
       const classificationBtn = document.createElement("li");
+      classificationBtn.classList.add('nav-item', 'p-2');
       const contactUsBtn = document.createElement("li");
       let searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
  
@@ -71,6 +72,7 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+
 
 
 
