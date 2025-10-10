@@ -57,4 +57,9 @@ document.addEventListener("DOMContentLoaded", function(e){
     btnList.prepend(newPrintBtn);
 });
 
+/* adjusting new UR logo*/ 
 
+document.addEventListener("DOMContentLoaded", function(e){
+   let logo = document.querySelector("#header .row .col-sm-9 h1 a img");
+    img.src = "https://www.rochester.edu/assets/images/brand/logos/primary_horizontal_navy.svg";
+});
