@@ -2010,7 +2010,7 @@ en:
       rvm: Répertoire de vedettes-matière
       sears: Sears List of Subject Heading
       tgn: Getty Thesaurus of Geographic Names
-      homoit: Homosaurus
+      homoit: "Homosaurus"
     subject_term_type:
       cultural_context: Cultural context
       function: Function
