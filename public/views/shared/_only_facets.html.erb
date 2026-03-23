@@ -46,6 +46,7 @@
         ordered_facets = facet_group.sort_by do |facet|
           order_map[facet.label] || Float::INFINITY
         end
+        facet_group = ordered_facets
       end
     %>
     <div id="<%= t("search_results.filter.#{type}").downcase %>-facet">
