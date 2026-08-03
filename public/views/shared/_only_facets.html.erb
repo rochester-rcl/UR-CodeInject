@@ -1,6 +1,7 @@
 <% unless @facets.blank? %>
 <h3><%= t('search_results.filter.add')%>: </h3>
 <dl id="facets">
+
   <%
     preferred_facet_order = %w(repository primary_type agents subjects langcode)
     ordered_facet_types = @facets.keys.sort{|a,b|
