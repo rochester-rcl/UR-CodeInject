@@ -88,64 +88,64 @@ document.addEventListener("DOMContentLoaded", function(e){
     `
       });
 
-/* Adjusting placeholder in search bar */
-document.addEventListener("DOMContentLoaded", function(e){
-    let searchContent = document.getElementById("filter_q0");
-    searchContent.placeholder = 'Search this collection';
-      }); 
+// /* Adjusting placeholder in search bar */
+// document.addEventListener("DOMContentLoaded", function(e){
+//     let searchContent = document.getElementById("filter_q0");
+//     searchContent.placeholder = 'Search this collection';
+//       }); 
 
-/* Adding home icon */
- document.addEventListener("DOMContentLoaded", function(e){
-    let homeBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:first-child");
-    homeBtn.innerHTML = ` 
-<a class="nav-link" href="/">
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 50 50" style="fill:#FFFFFF;"> <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z"></path> </svg>
-</a>
-    `
-      });
-/* FIxing text in search page */
-document.addEventListener("DOMContentLoaded", function(e){
-    let header = document.querySelector("#content .row .col-sm-12 .search h2");
-    header.innerHTML = `Search the Archives`;
-      });
+// /* Adding home icon */
+//  document.addEventListener("DOMContentLoaded", function(e){
+//     let homeBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:first-child");
+//     homeBtn.innerHTML = ` 
+// <a class="nav-link" href="/">
+// <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 50 50" style="fill:#FFFFFF;"> <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z"></path> </svg>
+// </a>
+//     `
+//       });
+// /* FIxing text in search page */
+// document.addEventListener("DOMContentLoaded", function(e){
+//     let header = document.querySelector("#content .row .col-sm-12 .search h2");
+//     header.innerHTML = `Search the Archives`;
+//       });
 
 
- /* print button on item page*/
-document.addEventListener("DOMContentLoaded", function(e){
-    let newPrintBtn = document.createElement("li");    
-    let btnList = document.querySelector("#info_row .page_actions .text-right .list-inline");
-    newPrintBtn.classList.add("large-badge", "align-center");
-    newPrintBtn.innerHTML = `
-        <button onClick="window.print()" class="btn btn-default page_action print">
-            <i class="fa fa-file-pdf-o fa-3x"></i><br><span class="print-label">Print</span><span class="generating-label" style="display: none">Generating</span>
-        </button>
-    `;
-    btnList.prepend(newPrintBtn);
-}); 
+//  /* print button on item page*/
+// document.addEventListener("DOMContentLoaded", function(e){
+//     let newPrintBtn = document.createElement("li");    
+//     let btnList = document.querySelector("#info_row .page_actions .text-right .list-inline");
+//     newPrintBtn.classList.add("large-badge", "align-center");
+//     newPrintBtn.innerHTML = `
+//         <button onClick="window.print()" class="btn btn-default page_action print">
+//             <i class="fa fa-file-pdf-o fa-3x"></i><br><span class="print-label">Print</span><span class="generating-label" style="display: none">Generating</span>
+//         </button>
+//     `;
+//     btnList.prepend(newPrintBtn);
+// }); 
 
-// Error Message
-document.addEventListener("DOMContentLoaded", function(e){
-    const errorMessage = document.querySelector('.alert.alert-info.alert-dismissible');
-    const errorMessage2 = document.querySelector('.alert.alert-danger.alert-dismissible');
-    errorMessage.innerHTML = ` 
-      <button class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>No Records Found
-  <ul>
-  <li> Make sure that all search terms are spelled correctly.</li>
-  <li>Try more general search terms.</li>
-<li>Add a search row using the + sign at the end of the search to create a Boolean search.</li>
-<li>Not all collections have been processed to the same level of detail. </li>
-<li>If you can’t find what you are looking for, please contact us. </li>
-  </ul>
-    `
-        errorMessage2.innerHTML = ` 
-      <button class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>No Records Found
-  <ul>
-  <li> Make sure that all search terms are spelled correctly.</li>
-  <li>Try more general search terms.</li>
-<li>Add a search row using the + sign at the end of the search to create a Boolean search.</li>
-<li>Not all collections have been processed to the same level of detail.</li> 
-<li>If you can’t find what you are looking for, please contact us. </li>
-  </ul>
-    `
-      });
+// // Error Message
+// document.addEventListener("DOMContentLoaded", function(e){
+//     const errorMessage = document.querySelector('.alert.alert-info.alert-dismissible');
+//     const errorMessage2 = document.querySelector('.alert.alert-danger.alert-dismissible');
+//     errorMessage.innerHTML = ` 
+//       <button class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>No Records Found
+//   <ul>
+//   <li> Make sure that all search terms are spelled correctly.</li>
+//   <li>Try more general search terms.</li>
+// <li>Add a search row using the + sign at the end of the search to create a Boolean search.</li>
+// <li>Not all collections have been processed to the same level of detail. </li>
+// <li>If you can’t find what you are looking for, please contact us. </li>
+//   </ul>
+//     `
+//         errorMessage2.innerHTML = ` 
+//       <button class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>No Records Found
+//   <ul>
+//   <li> Make sure that all search terms are spelled correctly.</li>
+//   <li>Try more general search terms.</li>
+// <li>Add a search row using the + sign at the end of the search to create a Boolean search.</li>
+// <li>Not all collections have been processed to the same level of detail.</li> 
+// <li>If you can’t find what you are looking for, please contact us. </li>
+//   </ul>
+//     `
+//       });
 
