@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
       const classificationBtn = document.createElement("li");
       classificationBtn.classList.add('nav-item', 'p-2');
-      const contactUsBtn = document.createElement("li");
+      // const contactUsBtn = document.createElement("li");
       let searchBtn = document.querySelector("#navigation .navbar .collapse .navbar-nav li:nth-child(8)");
  
+      /*
       contactUsBtn.innerHTML = `
  
           <div class="dropdown" data-dropdown>
@@ -46,17 +47,19 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
       `;
  
+      */
       classificationBtn.innerHTML = `
  
     <a href="https://archives.lib.rochester.edu/classifications">Classifications</a>
  
       `;
  
-      blueNavbar.appendChild(contactUsBtn);
+      // blueNavbar.appendChild(contactUsBtn);
       blueNavbar.insertBefore(classificationBtn, searchBtn);
     });
 
 
+/*
 document.addEventListener("click", (e) => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]");
   if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
@@ -72,6 +75,7 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+*/
 
 
 
